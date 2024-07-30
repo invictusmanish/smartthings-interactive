@@ -120,7 +120,7 @@ function Header() {
     },
   ];
   return (
-    <header className="bg-white py-2 px-4 flex justify-between items-center">
+    <header className="bg-white py-2 px-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
       <NavLink
         to={'/'}
         className={`flex items-center`}
@@ -130,7 +130,7 @@ function Header() {
           alt="SmartThings"
           className="w-9 h-9 rounded-full"
         />
-        <Text as="subTitle">&nbsp;SmartThings</Text>
+        <Text as="subTitle" className="font-bold">&nbsp;SmartThings</Text>
       </NavLink>
       <div className="flex items-center gap-2">
         <Button

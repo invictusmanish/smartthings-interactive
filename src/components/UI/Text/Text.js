@@ -12,6 +12,12 @@ const Text = (props) => {
         {props.children}
       </p>
     );
+  } else if (props.as === 'subTitle') {
+    return (
+      <p className={`text-[16px] leading-[22px] font-SamsungOne font-bold text-center lg:text-[20px] ${className}`}>
+        {props.children}
+      </p>
+    );
   } else if (props.as === 'description') {
     return <p className={`text-[14px] leading-[19px] font-normal font-SamsungOne text-center lg:text-[18px] lg:leading-[28px] ${className}`}>{props.children}</p>;
   } else {
