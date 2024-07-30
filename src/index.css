@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --max-width: 1440px;
+  --aspect-ratio: 1.8;
+}
+
 @font-face {
   font-family: "SamsungSharpSans";
   src: url("./assets/fonts/samsungsharpsans.otf") format("opentype");
@@ -38,11 +43,23 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'SamsungSharpSans', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
   width: 100%;
-  max-width: 1440px;
-  height: 50px;
+  margin: 0 auto;
+  height: calc(var(--max-width) / var(--aspect-ratio));
+}
+
+@media (max-width: var(--max-width)) {
+  .container {
+    height: calc(100vw / var(--aspect-ratio));
+  }
 }
