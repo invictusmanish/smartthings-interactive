@@ -11,7 +11,7 @@ const Home = () => {
 
   const handleVideoEnd = () => {
     console.log('Video ended');
-    setShowBackground(false);
+    setShowBackground(true);
   };
 
   if (!showBackground) {
