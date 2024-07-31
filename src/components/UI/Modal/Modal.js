@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 
 const Modal = (props) => {
   const [showModal, setShowModal] = useState(props.show);
-  useEffect(()=>{
-    setShowModal(props.show)
-  }, [props.show])
+  useEffect(() => {
+    setShowModal(props.show);
+  }, [props.show]);
   const handleClose = () => {
     setShowModal(false);
-    if(props?.onClose){
+    if (props?.onClose) {
       props.onClose();
     }
   };
@@ -20,9 +20,10 @@ const Modal = (props) => {
     >
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full">
         <div className="p-2 md:p-3 flex justify-end">
-          <button
+          <a
             onClick={handleClose}
-            className="text-gray-600 hover:text-gray-800"
+            className="text-gray-600 hover:text-gray-800 cursor-pointer"
+            // href='#'
           >
             <svg
               className="h-6 w-6 fill-current"
@@ -36,7 +37,7 @@ const Modal = (props) => {
                 clipRule="evenodd"
               />
             </svg>
-          </button>
+          </a>
         </div>
         <div className="p-4 md:p-5 text-center">{props.children}</div>
       </div>

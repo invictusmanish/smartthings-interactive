@@ -45,7 +45,7 @@ const SliderComponent = ({ items }) => {
           key={index}
           className="p-0"
         >
-          <div className="py-2 block w-screen mx-auto">{item}</div>
+          <div className="py-2 block mx-auto">{item}</div>
         </div>
       ))}
     </Slider>

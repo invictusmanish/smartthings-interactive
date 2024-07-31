@@ -28,7 +28,6 @@ function Header() {
     const os = getMobileOperatingSystem();
     setMobileOS(os);
   }, []);
-  console.log(ROOMS_DATA_DROPDOWN, 'R', ROOMS_DATA_DROPDOWN[0]);
   const navigateApp = () => {
     mobileOS == 'IOS'
       ? window.open(
@@ -130,7 +129,12 @@ function Header() {
           alt="SmartThings"
           className="w-9 h-9 rounded-full"
         />
-        <Text as="subTitle" className="font-bold">&nbsp;SmartThings</Text>
+        <Text
+          as="subTitle"
+          className="font-bold"
+        >
+          &nbsp;SmartThings
+        </Text>
       </NavLink>
       <div className="flex items-center gap-2">
         <Button

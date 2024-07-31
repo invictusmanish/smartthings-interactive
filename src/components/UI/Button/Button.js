@@ -25,6 +25,29 @@ const Button = (props) => {
         {props.title}
       </button>
     );
+  } else if (props.btnTheme === 'rooms') {
+    const themeClassName = `${className} font-SamsungSharpSans px-2 text-white font-bold text-[12px] leading-[14px] shadow-room-btn-mob rounded-[20px] xl:text-[18px] xl:leading-[38px] xl:shadow-room-btn xl:rounded-[30px]`;
+    // console.log(themeClassName, "THEME")
+    if (shouldRenderNavLink) {
+      return (
+        <NavLink
+          to={props.link}
+          className={themeClassName}
+        >
+          {props.title}
+        </NavLink>
+      );
+    }
+    return (
+      <button
+        onClick={props.onClick}
+        className={themeClassName}
+        type="button"
+        style={props.style}
+      >
+        {props.title}
+      </button>
+    );
   } else if (props.btnTheme === 'custom') {
     const themeClassName = `font-SamsungOne rounded-full ${className}`;
     if (shouldRenderNavLink) {

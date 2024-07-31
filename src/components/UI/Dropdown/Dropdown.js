@@ -1,12 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-const Dropdown = ({
-  options,
-  className,
-  dropdownListClassName,
-  fullWidth,
-  title,
-}) => {
+const Dropdown = ({ options, className, dropdownListClassName, title }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -32,7 +26,7 @@ const Dropdown = ({
   };
 
   const handleOptionClick = () => {
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   return (
@@ -49,14 +43,8 @@ const Dropdown = ({
       {isOpen && (
         <div
           ref={dropdownRef}
-          className={`absolute shadow-lg rounded-md overflow-hidden z-10 ${
-            fullWidth ? 'w-screen' : 'w-full'
-          } ${dropdownListClassName ? dropdownListClassName : ''}`}
-          style={
-            fullWidth
-              ? { top: `40px`, right: '-1rem' }
-              : { top: `40px`, left: `0px` }
-          }
+          className={`absolute shadow-lg rounded-md overflow-hidden container z-10 ${dropdownListClassName ? dropdownListClassName : ''}`}
+          style={{ top: `40px`, right: `-1rem` }}
         >
           <button
             className="absolute top-0 right-0 m-2 text-gray-600 hover:text-gray-800"

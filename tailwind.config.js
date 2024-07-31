@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/src/assets/images/desktop/BG.jpg')",
-        "mobile-hero": "url(/src/assets/images/mobile/BG.png)"
+        'mobile-hero': 'url(/src/assets/images/mobile/BG.png)',
       },
       scale: {
         130: '1.3',
@@ -28,6 +28,10 @@ module.exports = {
           '80%': { transform: 'translateX(0)', opacity: '1' },
           '100%': { transform: 'translateX(-100%)', opacity: '0' },
         },
+      },
+      boxShadow: {
+        'room-btn': '0px 3px 20px 0px rgba(0, 0, 0, 0.5)',
+        'room-btn-mob': '0px 2.5px 12px 0px rgba(0, 0, 0, 0.5)',
       },
       animation: {
         slideInOut: 'slideInOut 5s forwards',
