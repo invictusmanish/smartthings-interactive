@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('https://image-us.samsung.com/SamsungUS/smartthings/images/desktop/BG.jpg')",
-        'mobile-hero': 'url(https://image-us.samsung.com/SamsungUS/smartthings/images/mobile/BG.png)',
+        'mobile-hero': "url('https://image-us.samsung.com/SamsungUS/smartthings/images/mobile/BG.png')",
       },
       scale: {
         130: '1.3',
