@@ -9,7 +9,7 @@ import { ROOM_NAMES, routes } from '../../utility/constant';
 import { baseImagePath } from '../../utility/utility';
 import { ROOMS_DATA_DROPDOWN } from './Header.data';
 
-function Header() {
+const Header = () => {
   const [isModal, setismodal] = useState(false);
   const [mobileOS, setMobileOS] = useState(null);
   const getMobileOperatingSystem = () => {
