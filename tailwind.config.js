@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/src/assets/images/desktop/BG.jpg')",
-        'mobile-hero': 'url(/src/assets/images/mobile/BG.png)',
+        hero: "url('https://image-us.samsung.com/SamsungUS/smartthings/images/desktop/BG.jpg')",
+        'mobile-hero': 'url(https://image-us.samsung.com/SamsungUS/smartthings/images/mobile/BG.png)',
       },
       scale: {
         130: '1.3',
