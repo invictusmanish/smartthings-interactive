@@ -1,14 +1,14 @@
-import { baseImagePath } from '../../../utility/utility';
+import { baseImageSamsungPath } from '../../../utility/utility';
 import Button from '../Button/Button';
 import Text from '../Text/Text';
 
 const Card = ({ image, caption, title, description, ctaText, ctaLink }) => {
-  console.log(image, "IMAGE")
+  console.log(image, 'IMAGE');
   return (
     <div className=" w-full h-[390] group overflow-hidden shadow-lg bg-white relative flex flex-col rounded-[20px] hover:border-[#016bea] hover:border-[1.75px]">
       <img
         className="w-full h-52 object-contain px-5"
-        src={baseImagePath(image)}
+        src={baseImageSamsungPath(image)}
         alt="Card Image"
       />
       <div className=" text-black">

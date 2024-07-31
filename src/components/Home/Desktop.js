@@ -1,5 +1,5 @@
 import { ROOMS_DATA_DESKTOP } from '../../pages/Home/Home.data';
-import { baseImagePath } from '../../utility/utility';
+import { baseImageSamsungPath } from '../../utility/utility';
 import HotspotGif from '../Hotspot/Hotspot';
 import Button from '../UI/Button/Button';
 
@@ -35,12 +35,12 @@ const DesktopRooms = () => {
           >
             <div className="group">
               <img
-                src={baseImagePath(room.image)}
+                src={baseImageSamsungPath(room.image)}
                 alt={room.title}
                 className="object-contain w-[70%] transition-opacity duration-300 group-hover:opacity-30 relative z-[1]"
               />
               <img
-                src={baseImagePath(room.hoverImage)}
+                src={baseImageSamsungPath(room.hoverImage)}
                 alt={`${room.title} hover`}
                 className="absolute z-[1] w-[70%] inset-0 object-contain opacity-0 group-hover:opacity-80 transition-opacity duration-300"
               />
@@ -64,7 +64,7 @@ const DesktopRooms = () => {
               </div>
             </div>
             <img
-              src={baseImagePath('desktop/Shadow-old.png')}
+              src={baseImageSamsungPath('desktop/Shadow-old.png')}
               alt={`${room.title} shadow`}
               className="absolute top-[0] object-contain right-[0]"
             />

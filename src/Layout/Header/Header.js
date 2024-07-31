@@ -6,7 +6,7 @@ import Card from '../../components/UI/Card/Card';
 import Dropdown from '../../components/UI/Dropdown/Dropdown';
 import Modal from '../../components/UI/Modal/Modal';
 import { ROOM_NAMES, routes } from '../../utility/constant';
-import { baseImagePath } from '../../utility/utility';
+import { baseImageSamsungPath } from '../../utility/utility';
 import { ROOMS_DATA_DROPDOWN } from './Header.data';
 
 const Header = () => {
@@ -125,7 +125,7 @@ const Header = () => {
         className={`flex items-center`}
       >
         <img
-          src={baseImagePath('common/Logo.png')}
+          src={baseImageSamsungPath('common/Logo.png')}
           alt="SmartThings"
           className="w-9 h-9 rounded-full"
         />
@@ -163,7 +163,7 @@ const Header = () => {
           <div className="flex justify-between items-center mb-4">
             <div>
               <img
-                src={baseImagePath('common/qr.png')}
+                src={baseImageSamsungPath('common/qr.png')}
                 className="w-96 h-27"
               />
             </div>
@@ -186,7 +186,7 @@ const Header = () => {
               >
                 <img
                   className=""
-                  src={baseImagePath(
+                  src={baseImageSamsungPath(
                     'common/dropdown/Icon-DownloadApp-Googleplay-D.png',
                   )}
                   alt="Play Store"
@@ -202,7 +202,7 @@ const Header = () => {
               >
                 <img
                   className=""
-                  src={baseImagePath(
+                  src={baseImageSamsungPath(
                     'common/dropdown/Icon-DownloadApp-Appstore-D.png',
                   )}
                   alt="App Store"

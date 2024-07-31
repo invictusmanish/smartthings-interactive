@@ -2,6 +2,10 @@ export const baseImagePath = (path) => {
   return require(`../assets/images/${path}`);
 };
 
+export const baseImageSamsungPath = (path) => {
+  return `https://image-us.samsung.com/SamsungUS/smartthings/images/${path}`;
+};
+
 export const hexToRgba = (hex, alpha = 1) => {
   // Remove the hash at the start if it's there
   hex = hex.replace(/^#/, '');

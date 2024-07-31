@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { baseImagePath } from '../../utility/utility';
+import { baseImageSamsungPath } from '../../utility/utility';
 
 const images = [];
 
 for (let i = 0; i < 20; i++) {
   const filename = `common/hotspot/ST_IconLoop_${i.toString().padStart(4, '0')}.png`;
-  images.push(baseImagePath(filename));
+  images.push(baseImageSamsungPath(filename));
 }
 
 const HotspotGif = ({ onClick }) => {

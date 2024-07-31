@@ -1,5 +1,5 @@
 import { ROOMS_DATA_MOBILE } from '../../pages/Home/Home.data';
-import { baseImagePath } from '../../utility/utility';
+import { baseImageSamsungPath } from '../../utility/utility';
 import HotspotGif from '../Hotspot/Hotspot';
 import SliderComponent from '../Slider/Slider';
 import Button from '../UI/Button/Button';
@@ -13,12 +13,12 @@ const MobileRooms = () => {
       >
         <div className="group">
           <img
-            src={baseImagePath(room.image)}
+            src={baseImageSamsungPath(room.image)}
             alt={room.title}
             className="object-contain w-[70%] transition-opacity duration-300 group-hover:opacity-30 relative z-[1]"
           />
           <img
-            src={baseImagePath(room.hoverImage)}
+            src={baseImageSamsungPath(room.hoverImage)}
             alt={`${room.title} hover`}
             className="absolute z-[1] w-[70%] inset-0 object-contain opacity-0 group-hover:opacity-80 transition-opacity duration-300"
           />
@@ -42,7 +42,7 @@ const MobileRooms = () => {
           </div>
         </div>
         <img
-          src={baseImagePath('mobile/LP-Shadow-Isometric-604x313-D.png')}
+          src={baseImageSamsungPath('mobile/LP-Shadow-Isometric-604x313-D.png')}
           alt={`${room.title} shadow`}
           className="absolute top-[0] object-contain right-[0]"
         />
