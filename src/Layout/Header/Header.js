@@ -119,7 +119,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="bg-white py-2 px-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <header className="bg-white py-2 px-4 flex justify-between items-center sticky top-0 z-50 shadow-md width-[55px]">
       <NavLink
         to={'/'}
         className={`flex items-center`}
@@ -221,6 +221,6 @@ const Header = () => {
       </Modal>
     </header>
   );
-}
+};
 
 export default Header;
