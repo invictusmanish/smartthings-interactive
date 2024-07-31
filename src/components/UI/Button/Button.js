@@ -26,7 +26,7 @@ const Button = (props) => {
       </button>
     );
   } else if (props.btnTheme === 'rooms') {
-    const themeClassName = `${className} font-SamsungSharpSans px-2 text-white font-bold text-[12px] leading-[14px] shadow-room-btn-mob rounded-[20px] xl:text-[18px] xl:leading-[38px] xl:shadow-room-btn xl:rounded-[30px]`;
+    const themeClassName = `${className} font-SamsungSharpSans px-4 text-white font-bold text-[12px] leading-[14px] shadow-room-btn-mob rounded-[20px] xl:text-[18px] xl:leading-[38px] xl:shadow-room-btn xl:rounded-[30px] `;
     // console.log(themeClassName, "THEME")
     if (shouldRenderNavLink) {
       return (

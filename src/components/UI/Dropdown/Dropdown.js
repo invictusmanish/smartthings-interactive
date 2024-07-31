@@ -43,7 +43,7 @@ const Dropdown = ({ options, className, dropdownListClassName, title }) => {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className={`absolute shadow-lg rounded-md overflow-hidden container z-10 ${dropdownListClassName ? dropdownListClassName : ''}`}
+          className={`absolute shadow-lg rounded-md overflow-y-scroll container z-10 ${dropdownListClassName ? dropdownListClassName : ''}`}
           style={{ top: `40px`, right: `-1rem` }}
         >
           <button

@@ -44,7 +44,7 @@ const DesktopRooms = () => {
                 alt={`${room.title} hover`}
                 className="absolute z-[1] w-[70%] inset-0 object-contain opacity-0 group-hover:opacity-80 transition-opacity duration-300"
               />
-              <div className="absolute inset-0 left-[15%] top-[17%] group-hover:left-[20%] group-hover:top-[35%] max-w-max max-h-max p-4 z-[2]">
+              <div className="absolute inset-0 left-[15%] top-[10%] group-hover:left-[20%] group-hover:top-[35%] max-w-max max-h-max p-4 z-[2]">
                 <div className="group-hover:hidden flex flex-col items-center justify-center">
                   <HotspotGif />
                   <Button

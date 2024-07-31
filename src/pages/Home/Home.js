@@ -11,7 +11,7 @@ const Home = () => {
           <Text as="caption">{SmartThings.caption}</Text>
           <Text
             as="title"
-            className="py-[7px] lg:py-4"
+            className="py-[7px] xl:py-4"
           >
             {SmartThings.title}
           </Text>
