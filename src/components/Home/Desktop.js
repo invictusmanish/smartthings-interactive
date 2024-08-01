@@ -5,26 +5,20 @@ import Button from '../UI/Button/Button';
 
 const DesktopRooms = () => {
   return (
-    <div className="ml-10 grid grid-cols-1 md:grid-cols-3 h-full">
+    <div className="grid grid-cols-1 md:grid-cols-3 h-full">
       {Object.values(ROOMS_DATA_DESKTOP).map((room, index) => {
         let roomStyle = { top: `` };
         if (index === 0) {
           roomStyle = { top: `-35%` };
         }
-        if (index === 1) {
-          roomStyle = { left: `8%` };
-        }
         if (index === 2) {
-          roomStyle = { top: `-20%`, left: '8%' };
+          roomStyle = { top: `-20%` };
         }
         if (index === 3) {
           roomStyle = { top: `-35%` };
         }
-        if (index === 4) {
-          roomStyle = { left: `8%` };
-        }
         if (index === 5) {
-          roomStyle = { top: `-20%`, left: '8%' };
+          roomStyle = { top: `-20%` };
         }
         // console.log(room);
         return (

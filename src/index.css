@@ -4,9 +4,9 @@
 
 :root {
   --max-width: 1440px;
-  --max-height: 810px;
+  /* --max-height: 810px;
   --height-aspect-ratio: 0.9;
-  --width-aspect-ratio: 0.82;
+  --width-aspect-ratio: 0.82; */
 }
 
 @font-face {
@@ -51,19 +51,11 @@ body {
   font-family: 'SamsungSharpSans', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 .container {
-  width: calc(var(--width-aspect-ratio) * 100vw);
+  width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  height: calc((var(--height-aspect-ratio) * 100vh));
-  max-height: var(--max-height);
-}
-
-@media (max-width: 767px) {
-  .container {
-    width: 100vw;
-    height: 100vh;
-  }
 }

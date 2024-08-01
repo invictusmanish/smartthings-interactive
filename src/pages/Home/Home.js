@@ -40,8 +40,8 @@ const Home = () => {
   }
 
   return (
-    <section className="bg-mobile-hero md:bg-hero px-4 py-4 h-full">
-      <div className="home-page-wrapper h-full relative">
+    <section className="bg-mobile-hero md:bg-hero px-4 py-4">
+      <div className="home-page-wrapper h-full">
         <div className="py-[7px] px-[10px] lg:py-4">
           <Text as="caption">{SmartThings.caption}</Text>
           <Text
