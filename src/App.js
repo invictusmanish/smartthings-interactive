@@ -4,7 +4,7 @@ import Header from './Layout/Header/Header';
 
 const App = () => {
   return (
-    <div className="App container">
+    <div className="App">
       <Header />
       <AppRouter />
     </div>

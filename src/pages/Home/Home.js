@@ -7,7 +7,7 @@ import VideoPlayer from '../../components/UI/VideoPlayer/VideoPlayer';
 import { baseImageSamsungPath } from '../../utility/utility';
 
 const Home = () => {
-  const [showBackground, setShowBackground] = useState(false);
+  const [showBackground, setShowBackground] = useState(true);
 
   const handleVideoEnd = () => {
     console.log('Video ended');

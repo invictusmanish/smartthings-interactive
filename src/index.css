@@ -4,8 +4,8 @@
 
 :root {
   --max-width: 1440px;
-  /* --max-height: 810px;
-  --height-aspect-ratio: 0.9;
+  --max-height: 810px;
+  /* --height-aspect-ratio: 0.9;
   --width-aspect-ratio: 0.82; */
 }
 
@@ -51,10 +51,6 @@ body {
   font-family: 'SamsungSharpSans', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-.container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;

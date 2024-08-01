@@ -1,5 +1,5 @@
 export const baseImagePath = (path) => {
-  return require(`../assets/images/${path}`);
+  return require(`../assets/${path}`);
 };
 
 export const baseImageSamsungPath = (path) => {
